@@ -4,6 +4,9 @@
 
 $page-max-width: $grid-content;
 $page-padding: 4rem;
+$page-title-mobile: 2rem;
+$page-title-medium: 2.5rem;
+$page-title-large: 3rem;
 
 .page {
   margin: auto;
@@ -20,7 +23,7 @@ $page-padding: 4rem;
 
 .page__title {
   font-family: $font-family-first;
-  font-size: 3rem;
+  font-size: $page-title-mobile;
   padding: $page-padding 0 2rem 0;
   text-align: center;
 }
@@ -47,3 +50,16 @@ $page-padding: 4rem;
     margin: 2rem 0;
   }
 }
+
+@media #{$breakpoints-medium} {
+  .page__title {
+    font-size: $page-title-medium;
+  }
+}
+
+@media #{$breakpoints-large} {
+  .page__title {
+    font-size: $page-title-medium;
+  }
+}
+

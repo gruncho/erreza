@@ -1,0 +1,13 @@
+$content-padding-mobile: 4rem;
+$content-padding-large: 6rem;
+
+.content {
+  flex: auto;
+  padding-bottom: $content-padding-mobile;
+}
+
+@media #{$breakpoints-large} {
+  .content {
+    padding-bottom: $content-padding-large;
+  }
+}
